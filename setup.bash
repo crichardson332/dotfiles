@@ -20,7 +20,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # install fzf
 git clone https://github.com/junegunn/fzf.git "$HOME/.fzf"
-source "$HOME/.fzf/install" --all
+"$HOME/.fzf/install" --all
 
 # symlink dotfiles
 source "symlinks.bash"
