@@ -1,0 +1,19 @@
+[directory]
+nautilus-icon-view-keep-aligned=true
+nautilus-icon-view-layout-timestamp=1585578655
+nautilus-desktop-icon-size=48
+
+[trash]
+nautilus-icon-position-timestamp=1585578655
+nautilus-icon-position=56,26
+icon-scale=1
+
+[DELL DRIVE.volume]
+nautilus-icon-position=56,146
+icon-scale=1
+nautilus-icon-position-timestamp=1585162300
+
+[Ubuntu 18.04.3 LTS amd64.volume]
+nautilus-icon-position=56,406
+icon-scale=1
+nautilus-icon-position-timestamp=1585163414
