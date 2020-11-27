@@ -1,9 +1,10 @@
 # Debian
 PKGS=(
   build-essential
-  curl
+  ccache
   cmake
   ctags
+  curl
   git
   gcc
   htop
@@ -26,6 +27,7 @@ PKGS=(
   terminator
   unzip
   xbacklight
+  xclip
   xdotool
   xkbset
 )
