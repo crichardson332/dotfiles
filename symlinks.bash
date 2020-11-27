@@ -4,7 +4,6 @@ ln -sfn "$DIR/.bashrc" "$HOME/.bashrc"
 ln -sfn "$DIR/.bashrc_ssh" "$HOME/.bashrc_ssh"
 ln -sfn "$DIR/.dircolors" "$HOME/.dircolors"
 ln -sfn "$DIR/.fonts" "$HOME/.fonts"
-ln -sfn "$DIR/.gitignore" "$HOME/.gitignore"
 ln -sfn "$DIR/.prompt.bash" "$HOME/.prompt.bash"
 ln -sfn "$DIR/.vimrc" "$HOME/.vimrc"
 
