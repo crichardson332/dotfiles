@@ -188,7 +188,7 @@ endfunction
 " auto save session on quit
 " autocmd BufWinLeave *.* :call s:SaveCurSess()
 " autocmd BufWritePre *.* :call s:SaveCurSess()
-autocmd BufWritePre *.* :call s:SaveCurSess()
+" autocmd BufWritePre *.* :call s:SaveCurSess()
 
 """ jump to header
 " Jump to a file whose extension corresponds to the extension of the current

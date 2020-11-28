@@ -25,7 +25,7 @@ do
     trash "$HOME/$dir"
   fi
   # add to list of links to be created
-  LINKS+=" $dir"
+  LINKS+=($dir)
 done
 
 for link in "${LINKS[@]}"
