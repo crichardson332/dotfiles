@@ -20,3 +20,5 @@
 	excludesfile = ~/.config/git/gitignore
 [diff]
   tool = vimdiff
+[init]
+	defaultBranch = main
