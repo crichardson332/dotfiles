@@ -251,7 +251,7 @@ bindsym $mod+r mode "resize"
 # bar {
 #         status_command i3status
 #         tray_output primary
-#         font pango:DejaVu Snad Mono 10
+#         font pango:DejaVu Sans Mono 10
 # }
 bar {
 
@@ -271,10 +271,11 @@ bar {
   status_command i3status -c ~/.config/i3/i3status.conf
 }
 
-# volume master {
-#         format = "♪: %volume"
-#         format_muted = "♪: muted (%volume)"
-#         device = "pulse:1"
-# }
-
+# default floating windows
 for_window [class="Nautilus"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable

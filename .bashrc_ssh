@@ -46,9 +46,9 @@ function cdl ()
 {
   if [ $# == 0 ]
   then
-    cd && ls -lh --color=auto
+    cd && ls -lh
   else
-    cd "$1" && ls -lh --color=auto
+    cd "$1" && ls -lh
   fi
 }
 
