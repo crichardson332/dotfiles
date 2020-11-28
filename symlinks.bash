@@ -12,7 +12,6 @@ DIRS=(
   .fonts
   .config/git
   .config/i3
-  .config/nautilus
   .config/rofi
   .config/terminator
 )
