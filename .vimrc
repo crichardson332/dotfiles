@@ -3,8 +3,8 @@ filetype on
 filetype plugin indent on
 syntax enable
 :set nocompatible
-:set tabstop=2
-:set shiftwidth=2
+:set tabstop=4
+:set shiftwidth=4
 :set expandtab
 :set hls!
 :set ruler
@@ -352,12 +352,13 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'inkarkat/vim-SyntaxRange'
 Plug 'jceb/vim-orgmode'
 Plug 'ekalinin/dockerfile.vim'
-Plug 'valloric/youcompleteme'
+Plug 'morhetz/gruvbox'
+Plug 'esquires/lvdb'
+
+" Plug 'valloric/youcompleteme'
+
 " vim-scripts is deprecated - need to find replacements
 " Plug 'vim-scripts/utl.vim'
-
-" gruvbox doesnt work
-Plug 'morhetz/gruvbox'
 
 " Initialize plugin system
 call plug#end()
