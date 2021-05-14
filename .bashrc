@@ -39,9 +39,14 @@ alias sshvm='ssh -p 2224 chris@127.0.0.1'
 alias sshvmd='ssh -p 2226 chris@127.0.0.1'
 alias sshlnx='ssh crichardson@192.168.90.207'
 
+# gpu
+alias gpumon='watch -n0.1 nvidia-smi'
+
 # convenience
-alias py3='python3'
-alias p='python3'
+# alias python='python3' # python2 is dead
+# alias pip='pip3'
+# alias py3='python3'
+# alias p='python3'
 
 # ctags
 #git rev-list BRANCH | while read rev; do git grep "REGEX" $rev; done
@@ -176,3 +181,12 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # ssh uav54 "sudo sed -i 's/uav_real_ardupilot/uav_network_ardupilot/g' /etc/default/gtri-autonomy/autonomy_environment_file ; sudo service gtri-autonomy restart"
+
+# ACE
+alias sourcemarl='source ~/venvs/marl_envs/bin/activate'
+alias activate='source ~/venvs/rlcbf/bin/activate'
+alias dac='deactivate'
+alias act='activate'
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/crichardson8/.mujoco/mujoco200/bin
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
+alias icehammer='ice-login1.icl.gtri.org'

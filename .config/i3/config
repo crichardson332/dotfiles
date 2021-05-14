@@ -34,12 +34,12 @@ bindsym $mod+Shift+l move workspace to output left
 # MODES
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3_exit lock, mode "default"
-    bindsym e exec --no-startup-id i3_exit logout, mode "default"
-    bindsym s exec --no-startup-id i3_exit suspend, mode "default"
-    bindsym h exec --no-startup-id i3_exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3_exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3_exit shutdown, mode "default"
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -55,6 +55,10 @@ mode $displayMode {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
+# move workspace between monitors
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
 
 bindsym $mod+Pause mode "$mode_system"
 bindsym $mod+Delete mode "$mode_system"
@@ -172,8 +176,10 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 #
-set $workspace1 "1: Chrome "
+# set $workspace1 "1: Chrome "
+set $workspace1 "1: Firefox "
 set $workspace2 "2"
+set $workspace8 "8: Zotero "
 set $workspace9 "9: Notes "
 set $workspace10 "10: Slack "
 
@@ -185,7 +191,7 @@ bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
+bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
@@ -197,13 +203,15 @@ bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+8 move container to workspace $workspace8
 bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 assign [class="Google-chrome"] $workspace1
-assign [class="Slack"] $workspace10
+assign [class="Firefox"] $workspace1
+assign [class="Zotero"] $workspace8
 assign [class="Notable"] $workspace9
+assign [class="Slack"] $workspace10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

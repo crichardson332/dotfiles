@@ -2,8 +2,10 @@
 	name = Christopher Richardson
 	email = christopher.richardson@gtri.gatech.edu
 [alias]
-	nicelog = log --decorate --oneline --graph
-	biglog = log --decorate --graph
+	lg = log --decorate --oneline --graph
+	lgb = log --decorate --graph
+    lga = log --decorate --oneline --graph --all
+    lgba = log --decorate --graph --all
 	su = submodule update
 	sui = submodule update --init
 	sum = submodule update --remote
@@ -12,6 +14,7 @@
 	suri = submodule update --recursive --init
 	surm = submodule update --recursive --remote
 	surim = submodule update --recursive --init --remote
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 [push]
 	default = simple
 [fetch]
