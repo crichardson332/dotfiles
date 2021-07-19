@@ -190,3 +190,5 @@ alias act='activate'
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/crichardson8/.mujoco/mujoco200/bin
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 alias icehammer='ice-login1.icl.gtri.org'
+# export DISPLAY='localhost:10.0'
+alias startvnc='sudo x11vnc -display :0 -auth /var/run/lightdm/root/\:0'

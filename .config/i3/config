@@ -29,6 +29,7 @@ set $mod Mod1
 exec --no-startup-id xrandr --output DP-3 --auto --left-of DP-1
 bindsym $mod+Shift+h move workspace to output left
 bindsym $mod+Shift+l move workspace to output left
+bindsym $mod+Tab workspace back_and_forth
 
 
 # MODES
@@ -281,6 +282,7 @@ bar {
 
 # default floating windows
 for_window [class="Nautilus"] floating enable
+for_window [class="Pavucontrol"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable

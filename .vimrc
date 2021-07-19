@@ -81,17 +81,16 @@ let g:airline_section_b = ''
 let g:airline_section_c = ''
 
 " ale
-let g:ale_fixers = {
-  \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-  \}
-let g:ale_fix_on_save = 1
-let g:ale_linters = {'cpp': ['cppcheck', 'cpplint']}
+" let g:ale_fixers = {
+"   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+"   \}
+" let g:ale_fix_on_save = 1
+" let g:ale_linters = {'cpp': ['cppcheck', 'cpplint']}
 " let g:ale_lint_on_enter = 1
 " with ccls
 " let g:ale_completion_enabled = 1
 " noremap <c-]> :ALEGoToDefinition<cr>
-
-map <leader>al :ALEToggle<CR>
+" map <leader>al :ALEToggle<CR>
 
 "This unsets the 'last search pattern' register by hitting return
 nnoremap <CR> :noh<CR><CR>
@@ -345,7 +344,7 @@ Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 " others
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
