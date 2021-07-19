@@ -14,6 +14,7 @@ DIRS=(
   .config/i3
   .config/rofi
   .config/terminator
+  .notable
 )
 
 for dir in "${DIRS[@]}"
