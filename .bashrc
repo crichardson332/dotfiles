@@ -182,13 +182,30 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # ssh uav54 "sudo sed -i 's/uav_real_ardupilot/uav_network_ardupilot/g' /etc/default/gtri-autonomy/autonomy_environment_file ; sudo service gtri-autonomy restart"
 
-# ACE
-alias sourcemarl='source ~/venvs/marl_envs/bin/activate'
-alias activate='source ~/venvs/rlcbf/bin/activate'
-alias dac='deactivate'
-alias act='activate'
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/crichardson8/.mujoco/mujoco200/bin
-export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
-alias icehammer='ice-login1.icl.gtri.org'
-# export DISPLAY='localhost:10.0'
-alias startvnc='sudo x11vnc -display :0 -auth /var/run/lightdm/root/\:0'
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/crichardson8/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/crichardson8/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/crichardson8/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/crichardson8/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# AVA Lab
+alias skynet='ssh crichardson8@sky1.cc.gatech.edu'
+alias skynetpf='ssh -L 16008:127.0.0.1:6008 crichardson8@sky1.cc.gatech.edu'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/crichardson8/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/crichardson8/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/crichardson8/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/crichardson8/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
