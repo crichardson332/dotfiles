@@ -120,43 +120,24 @@ nnoremap <CR> :noh<CR><CR>
 
 """""" REMAPS """"""
 " move cursor to beginning/end of line
-inoremap <c-e> <End>
-inoremap <c-a> <Home>
-nnoremap <c-e> <End>
-nnoremap <c-a> <Home>
-vnoremap <c-e> <End>
-vnoremap <c-a> <Home>
+nnoremap <c-h> <Home>
+nnoremap <c-l> <End>
+vnoremap <c-h> <Home>
+vnoremap <c-l> <End>
+nnoremap <c-k> B
+nnoremap <c-j> E
+vnoremap <c-k> B
+vnoremap <c-j> E
 " quick jumps
-nnoremap <c-k> 10k
-nnoremap <c-j> 10j
-nnoremap <c-h> <s-h>
-nnoremap <c-l> <s-l>
-vnoremap <c-k> 10k
-vnoremap <c-j> 10j
-vnoremap <c-h> <s-h>
-vnoremap <c-l> <s-l>
-" inoremap <c-k> <c-c>10ka
-" inoremap <c-j> <c-c>10ja
-" " Move up and down in autocomplete with <c-j> and <c-k>
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
-inoremap <c-h> <c-c><s-h>i
-inoremap <c-l> <c-c><s-l>i
-" cursor to middle
-nnoremap <c-n> <s-m>
-vnoremap <c-n> <s-m>
-" increment operator
-nnoremap <c-f> <c-a>
-" remap ctrl-c to esc to get abbreviation finishing functionality
-inoremap <c-c> <esc>
+nnoremap <s-k> 10k
+nnoremap <s-j> 10j
+vnoremap <s-k> 10k
+vnoremap <s-j> 10j
+nnoremap <s-q> J
+vnoremap <s-q> J
 " tab remaps
 " nnoremap <c-t> :tabnew<CR>
 " tnoremap <c-t> <c-\><c-n>:tabnew<CR>
-" window remaps
-nnoremap <c-g> :vsplit<CR>
-nnoremap <c-b> :split<CR>
-nnoremap <s-h> <c-W>h<CR>k
-nnoremap <s-l> <c-W>l<CR>k
 " buffer cycling
 nnoremap <c-i> :bprev<CR>
 nnoremap <c-o> :bnext<CR>

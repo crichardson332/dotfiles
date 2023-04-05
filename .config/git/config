@@ -15,6 +15,9 @@
 	surm = submodule update --recursive --remote
 	surim = submodule update --recursive --init --remote
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	st = status
+    br = branch -vv
+    lgs = !git --no-pager log --decorate --oneline --graph -20
 [push]
 	default = simple
 [fetch]
@@ -25,3 +28,13 @@
   tool = vimdiff
 [init]
 	defaultBranch = main
+[pager]
+	branch = false
+	log = true
+[pull]
+	rebase = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
