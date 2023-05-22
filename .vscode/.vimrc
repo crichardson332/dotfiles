@@ -1,0 +1,15 @@
+nnoremap <c-h> <Home>
+nnoremap <c-l> <End>
+vnoremap <c-h> <Home>
+vnoremap <c-l> <End>
+nnoremap <c-k> B
+nnoremap <c-j> E
+vnoremap <c-k> B
+vnoremap <c-j> E
+" quick jumps
+nnoremap <s-k> 10k
+nnoremap <s-j> 10j
+vnoremap <s-k> 10k
+vnoremap <s-j> 10j
+nnoremap <s-q> J
+vnoremap <s-q> J
